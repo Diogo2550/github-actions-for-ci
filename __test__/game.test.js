@@ -8,16 +8,6 @@ describe('Game', () => {
     game = new Game(p1, p2)
   })
 
-  describe('Game', () => {
-    it('Initializes with an empty board', async () => {
-      for (let r = 0; r < game.board.length; r++) {
-        for (let c = 0; c < game.board[r].lenght; c++) {
-          expect(game.board[r][c]).toBeUndefined()
-        }
-      }
-    })
-  })
-
   describe('turn', () => {
     it("Inserts an 'X' into the top center", async () => {
       game.turn(0, 1)
