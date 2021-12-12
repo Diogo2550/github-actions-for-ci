@@ -17,10 +17,10 @@ describe('Game', () => {
   })
 
   describe('Game', () => {
-    /*it('Initializes with two players', async () => {
+    /* it('Initializes with two players', async () => {
       expect(game.p1).toBe('Salem')
       expect(game.p2).toBe('Nate')
-    })*/
+    }) */
 
     it('Initializes with an empty board', async () => {
       for (let r = 0; r < game.board.length; r++) {
@@ -30,13 +30,13 @@ describe('Game', () => {
       }
     })
 
-    /*it('Starts the game with a random player', async () => {
+    /* it('Starts the game with a random player', async () => {
       Math.random = () => 0.4
       expect(new Game(p1, p2).player).toBe('Salem')
 
       Math.random = () => 0.6
       expect(new Game(p1, p2).player).toBe('Nate')
-    })*/
+    }) */
   })
 
   describe('turn', () => {
@@ -51,7 +51,7 @@ describe('Game', () => {
     })
   })
 
-  /*describe('nextPlayer', () => {
+  /* describe('nextPlayer', () => {
     it('Sets the current player to be whoever it is not', async () => {
       Math.random = () => 0.4
       const game = new Game(p1, p2)
@@ -59,7 +59,7 @@ describe('Game', () => {
       game.nextPlayer()
       expect(game.player).toBe('Nate')
     })
-  })*/
+  }) */
 
   describe('hasWinner', () => {
     it('Wins if any row is filled', async () => {
